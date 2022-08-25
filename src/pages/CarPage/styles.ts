@@ -11,6 +11,10 @@ export const styles = StyleSheet.create({
     display: "flex",
     alignItems: "center",
     flexDirection: "row",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    zIndex: 11
   },
+  fullMap: {
+    position: "absolute",
+  }
 });

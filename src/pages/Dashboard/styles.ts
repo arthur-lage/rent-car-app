@@ -203,6 +203,7 @@ export const styles = StyleSheet.create({
   },
   moreCarsGasolineWrapper: {
     display: "flex",
+    alignItems: "center",
     flexDirection: "row",
     marginLeft: 26,
   },
@@ -228,6 +229,7 @@ export const styles = StyleSheet.create({
   },
   moreCarsBatteryWrapper: {
     display: "flex",
+    alignItems: "center",
     flexDirection: "row",
     marginLeft: 26,
   },

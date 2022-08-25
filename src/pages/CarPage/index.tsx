@@ -1,15 +1,15 @@
-import { TouchableOpacity, View } from "react-native";
+import { TouchableOpacity, View, Image } from "react-native";
 
 import ArrowLeftIcon from "../../assets/images/arrow-left.svg";
 import SettingsIcon from "../../assets/images/settings-icon.svg";
-
-import FortunerImage from '../../assets/images/fortuner-image.png'
 
 import { CarInfo } from "../../components/CarInfo";
 
 import { styles } from "./styles";
 
-export function CarPage({ navigation }: any) {
+import FullMap from "../../assets/images/map.png";
+
+export function CarPage({ route, navigation }: any) {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -23,7 +23,17 @@ export function CarPage({ navigation }: any) {
           <SettingsIcon />
         </TouchableOpacity>
       </View>
-      <CarInfo name="Fortuner GR" kilometers={870} gasoline={50} image={FortunerImage} pricePerDay={45}  />
+
+      <Image style={styles.fullMap} source={FullMap} />
+
+      <CarInfo
+        name={route.params.name}
+        gasoline={route.params.gasoline}
+        battery={route.params.battery}
+        image={route.params.image}
+        kilometers={route.params.kilometers}
+        pricePerDay={route.params.pricePerDay}
+      />
     </View>
   );
 }

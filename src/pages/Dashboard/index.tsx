@@ -14,8 +14,49 @@ import ArrowRight from "../../assets/images/arrow-right.svg";
 import FortunerGRImage from "../../assets/images/fortunerGR.png";
 import JaneCooper from "../../assets/images/jane-cooper.png";
 import MapIcon from "../../assets/images/maps-icon.png";
+import FortunerImage from "../../assets/images/fortuner-image.png";
+import CorollaImage from "../../assets/images/corolla-cross-image.png";
+import Ioniq5Image from "../../assets/images/ioniq-5-image.png";
 
 export function Dashboard({ navigation }: any) {
+  const availableCars = [
+    {
+      name: "Fortuner GR",
+      kilometers: 870,
+      gasoline: 50,
+      battery: null,
+      image: FortunerImage,
+      pricePerDay: 45,
+    },
+    {
+      name: "Corolla Cross",
+      kilometers: 4,
+      battery: null,
+      gasoline: 50,
+      image: CorollaImage,
+      pricePerDay: 45,
+    },
+    {
+      name: "Ionic 5",
+      kilometers: 8,
+      gasoline: null,
+      battery: 80,
+      image: Ioniq5Image,
+      pricePerDay: 45,
+    },
+  ];
+
+  function handleShowCar(index: number) {
+    navigation.navigate("CarPage", {
+      name: availableCars[index].name,
+      kilometers: availableCars[index].kilometers,
+      gasoline: availableCars[index].gasoline,
+      battery: availableCars[index].battery,
+      image: availableCars[index].image,
+      pricePerDay: availableCars[index].pricePerDay,
+    });
+  }
+
   return (
     <View style={styles.container}>
       <View style={styles.tabs}>
@@ -33,7 +74,7 @@ export function Dashboard({ navigation }: any) {
       </View>
 
       <TouchableOpacity
-        onPress={() => navigation.navigate("CarPage")}
+        onPress={() => handleShowCar(0)}
         activeOpacity={0.35}
         style={styles.nearestCarWrapper}
       >
@@ -90,7 +131,10 @@ export function Dashboard({ navigation }: any) {
                 </View>
               </View>
             </View>
-            <TouchableOpacity style={styles.moreCarsChooseCar}>
+            <TouchableOpacity
+              onPress={() => handleShowCar(1)}
+              style={styles.moreCarsChooseCar}
+            >
               <ArrowRight />
             </TouchableOpacity>
           </View>
@@ -111,7 +155,10 @@ export function Dashboard({ navigation }: any) {
                 </View>
               </View>
             </View>
-            <TouchableOpacity style={styles.moreCarsChooseCar}>
+            <TouchableOpacity
+              onPress={() => handleShowCar(2)}
+              style={styles.moreCarsChooseCar}
+            >
               <ArrowRight />
             </TouchableOpacity>
           </View>

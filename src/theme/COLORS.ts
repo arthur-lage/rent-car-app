@@ -1,5 +1,6 @@
 export const COLORS = {
   background: {
+    featureBorder: "#E8E8E8",
     darkBlue: "#232325",
     superDarkBlue: "#282931",
     divisorGray: "#4B4B4B",
@@ -15,6 +16,7 @@ export const COLORS = {
     darkGray: "#2C2B34",
     black: "#000000",
     lightGray: "#787878",
-    priceColor: "#292D32"
+    priceColor: "#292D32",
+    featureDesc: "#898A8D"
   }
 }
