@@ -15,7 +15,7 @@ import FortunerGRImage from "../../assets/images/fortunerGR.png";
 import JaneCooper from "../../assets/images/jane-cooper.png";
 import MapIcon from "../../assets/images/maps-icon.png";
 
-export function Dashboard() {
+export function Dashboard({ navigation }: any) {
   return (
     <View style={styles.container}>
       <View style={styles.tabs}>
@@ -32,7 +32,11 @@ export function Dashboard() {
         </TouchableOpacity>
       </View>
 
-      <TouchableOpacity activeOpacity={0.35} style={styles.nearestCarWrapper}>
+      <TouchableOpacity
+        onPress={() => navigation.navigate("CarPage")}
+        activeOpacity={0.35}
+        style={styles.nearestCarWrapper}
+      >
         <Text style={styles.nearestCarText}>Nearest Car</Text>
         <Image source={FortunerGRImage} style={styles.nearestCarImage} />
         <Text style={styles.nearestCarName}>Fortuner GR</Text>

@@ -13,8 +13,14 @@ import {
   Barlow_600SemiBold,
   Barlow_700Bold,
 } from "@expo-google-fonts/barlow";
-import AppLoading from "expo-app-loading";
+
 import { OpenSans_400Regular } from "@expo-google-fonts/open-sans";
+
+import AppLoading from "expo-app-loading";
+
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { CarPage } from "./src/pages/CarPage";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -23,7 +29,7 @@ export default function App() {
     Barlow_600SemiBold,
     Barlow_700Bold,
 
-    OpenSans_400Regular
+    OpenSans_400Regular,
   });
 
   if (!fontsLoaded) {
@@ -31,12 +37,24 @@ export default function App() {
     return <AppLoading />;
   }
 
+  const Stack = createNativeStackNavigator();
+
   return (
     <View style={styles.container}>
-      {/* <HomePage /> */}
-      <Dashboard />
+      <NavigationContainer>
+        <Stack.Navigator
+          screenOptions={{
+            headerShown: false,
+          }}
+          initialRouteName="Home"
+        >
+          <Stack.Screen name="Home" component={HomePage} />
+          <Stack.Screen name="Dashboard" component={Dashboard} />
+          <Stack.Screen name="CarPage" component={CarPage} />
+        </Stack.Navigator>
 
-      <StatusBar style="auto" translucent />
+        <StatusBar style="auto" translucent />
+      </NavigationContainer>
     </View>
   );
 }
