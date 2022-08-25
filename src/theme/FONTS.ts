@@ -3,4 +3,6 @@ export const FONTS = {
   barlowMedium: "Barlow_500Medium",
   barlowSemiBold: "Barlow_600SemiBold",
   barlowBold: "Barlow_700Bold",
+
+  openSansRegular: "OpenSans_400Regular"
 };

@@ -137,4 +137,104 @@ export const styles = StyleSheet.create({
     color: COLORS.text.black,
     fontSize: 14,
   },
+  mapButton: {
+    borderRadius: 20,
+  },
+  moreCarsWrapper: {
+    borderRadius: 20,
+    paddingBottom: 23,
+    paddingTop: 21,
+    paddingRight: 25,
+    paddingLeft: 24,
+    backgroundColor: COLORS.background.superDarkBlue,
+    display: "flex",
+    flexDirection: "column",
+    marginHorizontal: 28
+  },
+  moreCarsHeader: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    flexDirection: "row",
+    marginBottom: 20,
+  },
+  moreCarsCarName: {
+    fontFamily: FONTS.barlowBold,
+    fontSize: 20,
+    color: COLORS.text.white,
+    marginBottom: 10
+  },
+  moreCarsText: {
+    fontSize: 12,
+    color: COLORS.text.moreCarsTitle,
+    fontFamily: FONTS.openSansRegular,
+  },
+  carsContainer: {
+    display: "flex",
+    flexDirection: "column",
+  },
+  carOptionGasoline: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    flexDirection: "row"
+  },
+  moreCarsFooter: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  carOptionBattery: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    flexDirection: "row"
+  },
+  moreCarsLeft: {
+    display: "flex",
+    flexDirection: "column",
+  },
+  moreCarsGPSWrapper: { display: "flex", flexDirection: "row" },
+  moreCarsGPSText: {
+    color: COLORS.text.moreCarsText,
+    fontSize: 12,
+    fontFamily: FONTS.barlowRegular,
+    marginLeft: 6,
+  },
+  moreCarsGasolineWrapper: {
+    display: "flex",
+    flexDirection: "row",
+    marginLeft: 26,
+  },
+  moreCarsGasolineText: {
+    color: COLORS.text.moreCarsText,
+    fontSize: 12,
+    fontFamily: FONTS.barlowRegular,
+    marginLeft: 6,
+  },
+  moreCarsChooseCar: {
+    borderRadius: 36.36,
+    backgroundColor: COLORS.background.white,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 7.27,
+  },
+  divisor: {
+    height: 1,
+    width: "100%",
+    backgroundColor: COLORS.background.divisorGray,
+    marginVertical: 18,
+  },
+  moreCarsBatteryWrapper: {
+    display: "flex",
+    flexDirection: "row",
+    marginLeft: 26,
+  },
+  moreCarsBatteryText: {
+    color: COLORS.text.moreCarsText,
+    fontSize: 12,
+    fontFamily: FONTS.barlowRegular,
+    marginLeft: 6,
+  },
 });

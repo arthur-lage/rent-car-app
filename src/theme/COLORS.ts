@@ -1,10 +1,14 @@
 export const COLORS = {
   background: {
     darkBlue: "#232325",
+    superDarkBlue: "#282931",
+    divisorGray: "#4B4B4B",
     white: "#FFFFFF",
     superLightGray: "#F3F3F3"
   },
   text: {
+    moreCarsTitle: "#D4D4D4",
+    moreCarsText: "#D8D8D8",
     white: "#FFFFFF",
     gray: "#8E8E8E",
     darkGray: "#2C2B34",

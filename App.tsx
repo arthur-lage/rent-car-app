@@ -14,6 +14,7 @@ import {
   Barlow_700Bold,
 } from "@expo-google-fonts/barlow";
 import AppLoading from "expo-app-loading";
+import { OpenSans_400Regular } from "@expo-google-fonts/open-sans";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -21,6 +22,8 @@ export default function App() {
     Barlow_500Medium,
     Barlow_600SemiBold,
     Barlow_700Bold,
+
+    OpenSans_400Regular
   });
 
   if (!fontsLoaded) {
