@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { getStatusBarHeight } from "react-native-iphone-x-helper";
 import { COLORS } from "../../theme/COLORS";
 import { FONTS } from "../../theme/FONTS";
 
@@ -11,33 +12,36 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     marginBottom: 20.3,
     marginHorizontal: 50,
-    marginTop: 13.84
+    marginTop: getStatusBarHeight() + 13.84,
   },
   informationButton: {
     width: 100,
-    paddingRight: 9.21,
     paddingVertical: 2.85,
-    marginRight: 26.24,
-  },
-  informationIcon: {
-    marginRight: 10.85,
+    marginRight: 60,
+    display: "flex",
+    alignItems: "center",
+    flexDirection: "row",
   },
   informationText: {
     fontFamily: FONTS.barlowSemiBold,
     color: COLORS.text.black,
     fontSize: 16,
+    paddingRight: 5,
+    marginLeft: 10.85,
   },
   notificationsButton: {
-    width: 100,
+    width: "100%",
     paddingVertical: 2.85,
-  },
-  notificationsIcon: {
-    marginRight: 10.85,
+    display: "flex",
+    alignItems: "center",
+    flexDirection: "row",
   },
   notificationsText: {
     fontSize: 16,
     fontFamily: FONTS.barlowSemiBold,
     color: COLORS.text.black,
+    paddingRight: 5,
+    marginLeft: 10.85,
   },
   nearestCarWrapper: {
     paddingHorizontal: 22,
@@ -45,7 +49,8 @@ export const styles = StyleSheet.create({
     backgroundColor: COLORS.background.superLightGray,
     width: 319,
     alignSelf: "center",
-    borderRadius: 20
+    borderRadius: 20,
+    marginBottom: 22,
   },
   nearestCarText: {
     letterSpacing: 2.4,
@@ -79,10 +84,8 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     marginRight: 17,
   },
-  nearestCarGPSIcon: {
-    marginRight: 4,
-  },
   nearestCarGPSText: {
+    marginLeft: 4,
     fontSize: 12,
     color: COLORS.text.lightGray,
     fontFamily: FONTS.barlowRegular,
@@ -91,16 +94,46 @@ export const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
   },
-  nearestCarGasolineIcon: {
-    marginRight: 4,
-  },
   nearestCarGasolineText: {
+    marginLeft: 4,
     fontSize: 12,
     color: COLORS.text.lightGray,
     fontFamily: FONTS.barlowRegular,
   },
   nearestCarPricePerHour: {
     fontFamily: FONTS.barlowSemiBold,
+    color: COLORS.text.black,
+    fontSize: 14,
+  },
+  profileAndMap: {
+    display: "flex",
+    alignItems: "center",
+    flexDirection: "row",
+    paddingHorizontal: 28,
+    marginBottom: 22,
+  },
+  janeCooperProfile: {
+    marginRight: 17,
+    borderRadius: 20,
+    paddingTop: 27,
+    paddingHorizontal: 39,
+    paddingBottom: 20,
+    backgroundColor: COLORS.background.superLightGray,
+    display: "flex",
+    alignItems: "center",
+    flexDirection: "column",
+  },
+  janeCooperImage: {
+    marginBottom: 14,
+  },
+  janeCooperName: {
+    marginBottom: 6,
+    fontFamily: FONTS.barlowMedium,
+    fontSize: 16,
+    color: COLORS.text.black,
+  },
+  janeCooperMoney: {
+    fontFamily: FONTS.barlowBold,
     color: COLORS.text.black,
     fontSize: 14,
   },
