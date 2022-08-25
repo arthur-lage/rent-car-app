@@ -6,10 +6,12 @@ A mobile application for a car rent company, made with Expo, React Native and Ty
 
 ## 🌆 Images
 
-<img src="./assets/screnshot-1.jpeg" alt="Screenshot 1">
-<img src="./assets/screnshot-2.jpeg" alt="Screenshot 2">
-<img src="./assets/screnshot-3.jpeg" alt="Screenshot 3">
-<img src="./assets/screnshot-4.jpeg" alt="Screenshot 4">
+<div display="flex">
+  <img src="./assets/screenshot-1.jpeg" width="225" alt="Screenshot 1">
+  <img src="./assets/screenshot-2.jpeg" width="225" alt="Screenshot 2">
+  <img src="./assets/screenshot-3.jpeg" width="225" alt="Screenshot 3">
+  <img src="./assets/screenshot-4.jpeg" width="225" alt="Screenshot 4">
+</div>
 
 ## ⚠ Requirements
 
