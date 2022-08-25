@@ -4,7 +4,8 @@ export const COLORS = {
     superDarkBlue: "#282931",
     divisorGray: "#4B4B4B",
     white: "#FFFFFF",
-    superLightGray: "#F3F3F3"
+    superLightGray: "#F3F3F3",
+    black: "#000000"
   },
   text: {
     moreCarsTitle: "#D4D4D4",
@@ -14,5 +15,6 @@ export const COLORS = {
     darkGray: "#2C2B34",
     black: "#000000",
     lightGray: "#787878",
+    priceColor: "#292D32"
   }
 }
