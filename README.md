@@ -55,6 +55,6 @@ expo start # YOU NEED EXPO CLI INSTALLED
 
 ## 🔗 How to use the app
 
-If you wish to test the application, click the link below:
+If you wish to use the application, download the APK file in the link below:
 
-[app](https://link-to-your-app.com)
+[Car Rent](https://github.com/arthur-lage/rent-car-app/releases/tag/Release)
