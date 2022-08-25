@@ -4,6 +4,8 @@
 
 A mobile application for a car rent company, made with Expo, React Native and Typescript.
 
+This design was made by Avi Yansah, and it was found on: [Figma Resources](https://www.figma.com/community/category/web_design)
+
 ## 🌆 Images
 
 <div display="flex">
