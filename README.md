@@ -41,9 +41,9 @@ If you wish to check the app design on figma, click the link below:
 
 ```bash
 
-git clone https://github.com/arthur-lage/car-rent-app.git
+git clone https://github.com/arthur-lage/rent-car-app.git
 
-cd car-rent-app
+cd rent-car-app
 
 npm install
 
